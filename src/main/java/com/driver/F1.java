@@ -9,7 +9,7 @@ public class F1 extends Car {
     }
 
     public void accelerate(int rate){
-        int newSpeed = 0; //set the value of new speed by using currentSpeed and rate
+        int newSpeed; //set the value of new speed by using currentSpeed and rate
         /**
          * speed 0: gear 1
          * speed 1-50: gear 1
@@ -23,7 +23,7 @@ public class F1 extends Car {
         int gear ;
 
         if(newSpeed == 0) {
-            //Stop the car, set gear as
+            /* Stop the car, set gear as */
             stop();
             gear = 1;
         }else if(newSpeed <= 50){
@@ -41,8 +41,9 @@ public class F1 extends Car {
         }
         //for all other cases, change the gear accordingly
 
-        if(newSpeed > 0) {
+        //if(newSpeed > 0) {
+        changeGear(gear);
             changeSpeed(newSpeed, getCurrentDirection());
-        }
+        //}
     }
 }

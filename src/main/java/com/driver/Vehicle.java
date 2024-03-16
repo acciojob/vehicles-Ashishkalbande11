@@ -2,7 +2,7 @@ package com.driver;
 
 public class Vehicle {
 
-    private String name;
+    private final String name;
     private int currentSpeed;
     private int currentDirection;
 
