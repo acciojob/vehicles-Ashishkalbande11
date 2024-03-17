@@ -21,7 +21,7 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
         newSpeed = getCurrentSpeed()+rate;
-        int gear ;
+
 
         if(newSpeed == 0) {
             /* Stop the car, set gear as */
